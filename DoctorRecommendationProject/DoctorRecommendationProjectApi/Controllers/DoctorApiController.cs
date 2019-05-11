@@ -13,7 +13,7 @@ namespace DoctorRecommendationProject.Controllers
     [RoutePrefix("api/Doctorapi")]
     public class DoctorApiController : ApiController
     {
-        // GET api/<controller>
+        // GET api/<controllerrr>
         DoctorRepository ur = new DoctorRepository();
         // GET: api/Useraip
         [Route("GetDoctor")]
