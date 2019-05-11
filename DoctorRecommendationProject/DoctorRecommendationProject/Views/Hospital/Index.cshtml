@@ -1,0 +1,61 @@
+﻿@model IEnumerable<DoctorRecommendationProject.Models.HospitalModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Hospital ID
+            </th>
+            <th>
+                Hospital Name
+            </th>
+            <th>
+                Hospital Address
+            </th>
+            <th>
+                Hospital Phone
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="useBody"></tbody>
+</table>
+
+<script>
+        $(function () {
+             getUserList();
+        });
+
+    function getUserList() {
+        $.ajax({
+            url: '/Hospital/HospitalList',
+            type: 'get',
+            async: false,
+            success: function (data) {
+                var h = "";
+                $.each(data, function (i, item) {
+
+                    h += '<tr class="tblData' + item.Hospital_ID + '" data-id="' + item.Hospital_ID + '">';
+                    h += '<td>' + item.Hospital_ID + '</td>';
+                    h += '<td>' + item.Hospital_Name + '</td>';
+                    h += '<td>' + item.Hospital_Address + '</td>';
+                    h += '<td>' + item.Hospital_Phone + '</td>';
+                    h += '<td><button class="udelete" data-id="' + item.Login_ID + '" type="button" >DELETE</td>';
+                    h += '<td><button class="uedit" data-id="' + item.Login_ID + '" type="button">EDIT</td>';
+                    h += '</tr>';
+                });
+                $("#useBody").html(h);
+            }
+        });
+    }
+    </script>

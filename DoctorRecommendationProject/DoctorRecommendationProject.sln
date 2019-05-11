@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorRecommendationProject", "DoctorRecommendationProject\DoctorRecommendationProject.csproj", "{69EB46AA-4283-40BB-A496-BD8E14DD6608}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorRecommendationProjectApi", "DoctorRecommendationProjectApi\DoctorRecommendationProjectApi.csproj", "{1709BB25-DBE0-49CB-9DA2-58536C67C83F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69EB46AA-4283-40BB-A496-BD8E14DD6608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69EB46AA-4283-40BB-A496-BD8E14DD6608}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69EB46AA-4283-40BB-A496-BD8E14DD6608}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69EB46AA-4283-40BB-A496-BD8E14DD6608}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1709BB25-DBE0-49CB-9DA2-58536C67C83F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1709BB25-DBE0-49CB-9DA2-58536C67C83F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1709BB25-DBE0-49CB-9DA2-58536C67C83F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1709BB25-DBE0-49CB-9DA2-58536C67C83F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B10BBDBD-029A-4B11-B8F2-F7D5C6411371}
+	EndGlobalSection
+EndGlobal
